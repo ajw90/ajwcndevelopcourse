@@ -28,18 +28,20 @@ let comb = (n, r) => {
 };
 */
 
+/*
 let actualPIN = 1234;
 let balance = 10000;
-let withdrawn = 0;
 let tries = 3;
 
 const cashMachine = (PIN, request) => {
     if (tries === 0) {
         console.log("Locked; please contact your bank.");
+        return 0;
     }
     if (PIN !== actualPIN) {
         // PIN wrong; do not give any info
-        console.log(`You entered PIN, ${PIN}; invalid`);
+        tries--;
+        console.log(`You entered PIN, ${PIN}; invalid - tries remaining: ${tries}.`);
         return 0;
     }
     else if (request > balance) {
@@ -53,3 +55,14 @@ const cashMachine = (PIN, request) => {
         return request;
     }
 };
+
+console.log(cashMachine(1234, 500000));
+console.log(cashMachine(1234, 5000));
+console.log(cashMachine(1234, 10));
+cashMachine(123, 10);
+cashMachine(123, 10);
+cashMachine(123, 10);
+cashMachine(123, 10);
+cashMachine(1234, 10);
+cashMachine(1234, 10);
+*/
