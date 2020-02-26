@@ -1,0 +1,13 @@
+ls: displays the contents of the current directory
+pwd: displays the path of the current directory
+cd <path>: navigates to path, relative to current directory
+..: path of the previous directory relative to current one
+~: path of the home directory for the session
+mkdir <name ...>: creates one or more new directories in the current directory
+touch <name ...>: creates one or more new files in the current directory
+rm <name ...>: removes one or more files 
+rm -r <name ...>: removes one or more files or directories 
+rmdir <name ...>: removes one or more directories - if they are empty
+<name>/*: everything contained in directory, <name>
+/a/b/c: the file path to directory or file c in directory b, which is in directory a
+clear: empty the terminal; scroll up to see history

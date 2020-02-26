@@ -1,0 +1,4 @@
+Muted machine volume
+Turned off smart zoom
+Turned up mouse tracking by 1
+Turned VS Code line wrapping off
