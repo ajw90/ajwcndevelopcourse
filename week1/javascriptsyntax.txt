@@ -1,0 +1,120 @@
+**********************************************************
+JavaScript Syntax
+**********************************************************
+
+Essentials:
+===========
+
+<file>.js
+
+// <single-line comment>
+
+/* <comment> */
+
+**********************************************************
+
+Operators:
+==========
+
++ - * / %
+
+&& || 
+
+= 
+
+<some operators>= *** a <operator>= b equals a = a <operator> b
+
+== != *** value 
+
+=== !== *** type and value
+
+> >= < <=
+
+**********************************************************
+
+Statements: 
+===========
+
+<basic statement>;
+
+{<block>}
+
+***
+
+if (<condition>) {
+    <code>
+}
+else if (<condition>) {
+    <code>
+}
+...
+else {
+    <code>
+}
+
+switch (<test value>) {
+    case <possible value>: <code>
+    ...
+    default: <code>
+}
+
+***
+
+for (<expr once before loop>; <expr condition before each iteration>; <expr after each iteration>) {
+    <code>
+}
+
+while (<condition run before each iteration>) {
+    <code>
+}
+
+break; *** jump to point in program directly after loop
+continue *** jump to end of current iteration 
+
+***
+
+let <variable scoped to block> <optional assignment>;
+
+const <constant scoped to block> <mandatory assignment>;
+
+var <variable scoped to function> <optional assignment>; *** Try to avoid this
+
+***
+
+return <value>; *** stop executing function at this point - <value> is returned to the program at the point at which
+                    the function was callede
+
+**********************************************************
+
+Types:
+======
+
+"<string>" - ordinary string
+
+`<template string> ${value to be embedded in template}>` - Template string
+
+0 1 <number>.<number> <number>e<exp> Infinity -Infinity NaN - Numbers
+
+true false *** boolean
+
+***
+
+[<value at 0>, ..., <value at position n - 1] - array of length n
+
+<array>[<n>] *** nth element of <array>
+
+***
+
+(<parameter, ...>) => {<code>} *** arrow function (use this) - cannot be used within objects
+
+function (<parameter, ...>) {<code>}
+
+function <function name> (<parameter, ...>) {<code>} *** function declaration
+
+***
+
+{<property>: <value>, ...} *** object *** property can be an integer, a string, or a valid JS variable name
+
+<object>.<property> 
+<object>[<string or integer>] 
+

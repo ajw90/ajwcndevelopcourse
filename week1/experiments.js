@@ -66,3 +66,24 @@ cashMachine(123, 10);
 cashMachine(1234, 10);
 cashMachine(1234, 10);
 */
+
+/*
+let me = 
+{
+    name: "Andrew",
+    age: 29,
+    profession: "pending",
+    change: function (name, age, profession) {
+        this.name = name || this.name;
+        this.age = age || this.age;
+        this.profession = profession || this.profession;
+    },
+    intro: function () {
+        console.log(`My name is ${this.name}, and I am ${this.age}. Profession? ${this.profession}.`);
+    }
+};
+
+me.intro();
+me.change("Andrew Winters");
+me.intro();
+*/
