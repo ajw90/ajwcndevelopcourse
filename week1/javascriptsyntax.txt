@@ -16,19 +16,44 @@ Essentials:
 Operators:
 ==========
 
-+ - * / %
+Unary: 
+------
 
-&& || 
+++/--n *** adds/subtracts 1 from n, then returns the value n
 
-= 
+n++/-- *** returns the value of n, then adds/subtracts 1
 
-<some operators>= *** a <operator>= b equals a = a <operator> b
+!n *** returns true if n is false
 
-== != *** value 
+~n *** where n is a number, the 0s and 1s in n's binary representation are swapped *** 0101 ---> 1010
 
-=== !== *** type and value
+typeof x *** returns a string giving the type of x (according to JS logic)
+
+Binary: 
+-------
+
+a, b *** evaluates a and b but only returns the value of b
+
++ - * / % **
+
+== != *** value comparison
+
+=== !== *** type and value comparison
 
 > >= < <=
+
+&& ||
+
+a = b *** places the value of b in a, then returns the new value of a
+
+<operator>= *** a <op>= b equals a = a <op>= b
+
+a instanceof b *** returns true if b is the prototype of a
+
+Ternary: 
+--------
+
+<condition> ? <return this if true> : <return this if false>
 
 **********************************************************
 
@@ -89,6 +114,12 @@ return <value>; *** stop executing function at this point - <value> is returned 
 Types:
 ======
 
+undefined *** the value of a variable to which no value has been given or an empty expression
+
+null *** the intentional absence of value - as opposed to "undefined"
+
+***this
+
 "<string>" - ordinary string
 
 `<template string> ${value to be embedded in template}>` - Template string
@@ -118,3 +149,9 @@ function <function name> (<parameter, ...>) {<code>} *** function declaration
 <object>.<property> 
 <object>[<string or integer>] 
 
+this *** Within an object method, "this" refers to the object on which the method is currently being called.
+        Given a.method(), within ".method", this would take the value a;
+        Given z.method(), within ".method", this would take the value z;
+        ...
+        Outside of any function, this refers to the global object; variables declared in the global scope are 
+        properties of the global object.
