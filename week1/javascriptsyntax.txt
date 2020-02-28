@@ -137,6 +137,8 @@ true false *** boolean
 ***
 
 (<parameter, ...>) => {<code>} *** arrow function (use this) - cannot be used within objects
+                                   With a single argument, the parentheses on the parameter list can be omitted.
+                                   Braces can be omitted when the function body is a single statement.
 
 function (<parameter, ...>) {<code>}
 
@@ -153,5 +155,18 @@ this *** Within an object method, "this" refers to the object on which the metho
         Given a.method(), within ".method", this would take the value a;
         Given z.method(), within ".method", this would take the value z;
         ...
-        Outside of any function, this refers to the global object; variables declared in the global scope are 
-        properties of the global object.
+        Outside of any function, "this" refers to the global object; variables declared in the global scope (or 
+        within a block or function without "let", "var", or "const") are properties of the global object.
+
+***
+
+class {
+    constructor (<...>) {<code>} *** This method is used to construct new objects of this type
+    method (<parameters, ...>) {
+        <code>
+    }
+}
+
+class <Class Name> {<as above>} // class declaration as opposed to the above which is a class expression 
+
+new <Class Name> (<arguments passed to constructor>) *** this returns a new object based on <Class Name>

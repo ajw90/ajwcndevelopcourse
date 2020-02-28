@@ -87,3 +87,71 @@ me.intro();
 me.change("Andrew Winters");
 me.intro();
 */
+
+/*
+const Department = class {
+    constructor (name, employees, budget) {
+        this.name = name;
+        this.employees = employees;
+        this.budget = budget;
+    }
+    report () {
+        console.log(
+            `This financial year, ${this.name} has ${this.employees} employees ` 
+            + `and an allocated budget of £${this.budget}.`
+        );
+    }
+
+};
+let treasury = new Department("HMRC", 45000, 124000000000);
+let env = new Department("DEFRA", 8032, 12e9);
+treasury.report();
+env.report();
+*/
+
+/*
+let i = 0;
+let stop = setInterval(
+    () => {
+        if (i > 10) {
+            clearInterval(stop);
+        }
+        else {
+            console.log(i++);
+        }
+    },
+    800
+);
+*/
+
+/*
+const wait = (milliseconds, callback, args) => {
+    const start = Date.now();
+    while (Date.now() - start < milliseconds) 
+        ;
+    return callback(args);
+};
+
+wait(
+    3000,
+    (args) => {
+        console.log(`Name: ${args.name} - Age: ${args.age}`);
+    },
+    {
+        name: "A. Winters",
+        age: "29"
+    }
+);
+// Expect 9
+console.log(
+    wait(
+        4000,
+        (args) => {
+            return args.a + args.b;
+        },
+        {
+            a: 2, b: 7
+        }
+    )
+);
+*/
