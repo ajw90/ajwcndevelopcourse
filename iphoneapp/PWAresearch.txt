@@ -1,4 +1,4 @@
-﻿PWAs
+PWAs
 
 
 What are they? 
@@ -7,7 +7,7 @@ What are they?
 PWA stands for progressive web application. 
 
 
-The chief feature identifying a PWA, as opposed to a native desktop application or traditional web application, is that it attempts to deliver the look, feel, and functionality of a traditional mobile desktop application using fronted technologies (primarily HTML, CSS, and JavaScript)(1). Fundamentally a PWA is a website; however, it must display and perform like a mobile application(2)
+The chief feature identifying a PWA, as opposed to a native desktop application or traditional web application, is that it attempts to deliver the look, feel, and functionality of a traditional mobile desktop application using frontend technologies (primarily HTML, CSS, and JavaScript)(1). Fundamentally a PWA is a website; however, it must display and perform like a mobile application(2)
 
 
 As in a traditional website, HTML is responsible for the content of the application; CSS, the design; and JavaScript, the behaviour; of these three, it is JavaScript which has the biggest part to play in delivering the native-app like functionality that is expected of these applications. 
