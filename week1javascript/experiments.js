@@ -155,3 +155,14 @@ console.log(
     )
 );
 */
+
+// Dynamic property naming:
+
+/*
+let numbers = {};
+let i;
+for (i = 0; i < 11; i++) {
+    numbers[`theNumber${i}`] = i;
+}
+console.log(numbers);
+*/
