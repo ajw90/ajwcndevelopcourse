@@ -1,0 +1,48 @@
+/*
+Cascading Style Sheets
+
+Inline: 
+
+<element style="\CSS statements\">
+
+Style element:
+
+<style>\CSS\</style> // Goes in the head element of the HTML document
+
+External: 
+
+<link rel="stylesheet" type="text/css" href="\cssfile.css\" />
+
+***
+
+CSS block:
+
+\selector\ {
+    \CSS statements\
+}
+
+CSS statement:
+
+\property\: \value\;
+
+Selectors:
+
+* - all elements 
+
+x - any element x
+
+#x - the element with id x
+
+.x - all elements with class x
+
+x.y - all elements x with class y
+
+x y - all y elements which are children of x
+
+x:y - all x elements with pseudoclass y
+
+x, y, ... - all elements x or y or ...
+
+*/
+
+/*\CSS comment\*/
