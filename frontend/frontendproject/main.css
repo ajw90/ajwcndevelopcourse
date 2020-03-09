@@ -1,0 +1,51 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.outcomeBody {
+    background-image: url("resources/images/ambientbackground.gif");
+    background-size: 100% 100%;
+}
+.menupages {  
+}
+.menupages div {
+    background-color: #000000;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    color: #00f0a0;
+    margin: 10px;
+    padding: 20px;
+}
+.menupages a {
+    color: #00f0a0;   
+}
+.menupages a:hover {
+    color: #00ff00;
+}
+.tasks {
+    background-color: #ffffff;
+    border-radius: 25px;
+    font-size: 20px;
+    margin: 10px;
+    opacity: 0.4; 
+    padding: 20px;
+}
+.tasks:hover {
+    opacity: 0.9;
+}
+.tasks:hover a {
+    color: #6000ff;
+    font-weight: bold;
+}
+.tasks:hover a:hover {
+    color: #f000a0;
+}
+.tasks:hover .questions, .tasks:hover h3 {
+    color: #f0a000;
+}
+#indexBody {
+
+}

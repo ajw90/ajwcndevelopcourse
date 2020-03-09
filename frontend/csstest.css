@@ -46,3 +46,11 @@ x, y, ... - all elements x or y or ...
 */
 
 /*\CSS comment\*/
+
+/*
+The Box Model: 
+
+Margin > Border > Padding > Content < Padding < Border < Margin
+
+The same occurs vertically.
+*/
