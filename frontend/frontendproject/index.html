@@ -2,36 +2,63 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <title>My Home Page</title>
-  <link rel="stylesheet" type="text/css" href="main.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"/>
+	<meta charset="UTF-8"/>
+	<meta 
+	    name="viewport" 
+	    value="width=device-width, initial-scale=1"
+	/>
+	<link rel="stylesheet" href="main.css" type="text/css"/> 
 </head>
-<body id="indexBody">
-  <h1 id="top">Welcome to My Home Page</h1>
-  <div id="main_nav">
-      <a href="aboutme.html">About Me</a>
-      <br/>
-      <a href="coursework.html">Coursework</a>
-  </div>
-  <div>
-    <h3>Here's an image for some colour (will probably change):</h3>
-    <img
-      src="resources/images/firefliesonwater.jpeg" 
-      width="100%"
-      alt="The 3d art installation, Fireflies on The Water"
-    />
-    <p>
-      This is a project which I am undertaking as part of the 3-week 
-      Develop Course with 
-      <a href="https://wearecodenation.com/">
-          Code Nation
-      </a>    
-      in Chester.                                                                                               
-    </p>        
-  </div>
-  <div id="footer">
-    <a href="#top">Go right to the top.</a>    
-  </div>
+<body id="indexPage">
+	<span id="black"></span>
+    <div 
+        class="circles" 
+        id="circle1"
+        title="Source: https://joindiaspora.com/posts/12206345"
+    >
+    </div>
+    <div 
+        class="circles" 
+        id="circle2"
+        title="Source: https://github.com/eleanorlutz/AnimatedPythonPatterns"
+    >
+    </div>
+    <div 
+        class="circles" 
+        id="circle3"
+        title="Source: https://giphy.com/gifs/perfect-loops-3NeSk2IVEd2FYUQEcM"
+    >
+    </div>
+    <div 
+        class="circles" 
+        id="circle4"
+        title="Source: https://github.com/eleanorlutz/AnimatedPythonPatterns"
+    >
+    </div>		
+    <div id="menu">
+        <div class="container" id="menu_label">
+        	<h1>My Website</h1>
+        </div>
+        <div id="drop_menu">
+        	<div id="opt1">
+        		<div class="container">
+        		    <a href="aboutme.html">About me</a>
+        		</div>
+        	</div>
+        	<div id="opt2">
+        		<div class="container">
+                <a href="coursework.html">Coursework</a>            		    
+        		</div>
+        	</div>
+        	<div id="opt3">
+        		<div class="container">
+        			Background colour? 
+                    <a href="#indexPage">White</a>  
+                    or
+                    <a href="#black">Black</a>
+        		</div>
+        	</div>
+        </div>
+    </div>
 </body>
 </html>

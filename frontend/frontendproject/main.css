@@ -1,37 +1,187 @@
+/* Project-wide styles */
 * {
     font-family: 'Roboto Condensed', sans-serif;
 }
 a {
     text-decoration: none;
 }
-.outcomeBody {
-    background-image: url("resources/images/ambientbackground.gif");
-    background-size: 100% 100%;
+/* Specific to index.html */
+div.container {
+    margin: 0;  
+    position: relative;
+    top: 40%;
 }
-.menupages {  
+#indexPage {
+    background-color: #000000;
 }
-.menupages div {
+#indexPage:target {
+    background-color: #ffffff;
+}
+#menu {
+    background-color: #f0a000; 
+    border-radius: 25px; 
+    font-size: 18px;    
+    font-weight: bold;  
+    height: 100px;  
+    left: 50%;  
+    margin: -50px 0 0 -30%; 
+    opacity: 0.8;           
+    position: absolute;
+    text-align: center; 
+    top: 35%;
+    width: 60%; 
+}
+#menu h1 {
+    font-size: 22px;        
+    margin: 0;
+}
+#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+#menu a:hover {
+    color: #ffffff;
+    font-size: 19px;
+}
+#menu:hover #menu_label {
+    display: none;
+}
+#menu:hover #drop_menu {
+    border-radius: 25px; 
+    display: block;
+}
+#drop_menu {
+    background-color: #f0a000;  
+    display: none;
+    height: 300px;           
+}
+#drop_menu div {
+    height: 33.33%;             
+}
+#opt1:hover {
+    background-color: #705A90;      
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;                 
+}
+#opt2:hover {
+    background-color: #C07060;
+}
+#opt3:hover {
+    background-color: #80A070;      
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;   
+} 
+/* Circles for index.html */
+.circles {
+    opacity: 0.8;   
+    position: absolute; 
+} 
+#circle1 {
+    background-image: url("resources/images/rainbow.gif");   
+    border-radius: 450px;           
+    height: 450px;  
+    left: 25%;
+    top: 90px;
+    width: 450px;                           
+}   
+#circle2 {
+    background-image: url("resources/images/ambient_background3.gif");   
+    border-radius: 180px;       
+    height: 180px;  
+    left: 10%;
+    top: 200px;
+    width: 180px;               
+}    
+#circle3 {
+    background-image: url("resources/images/ambient_background2.gif");       
+    border-radius: 300px;   
+    height: 300px;  
+    right: 10%;
+    top: 20px;
+    width: 300px;               
+}    
+#circle4 { 
+    background-image: url("resources/images/ambient_background4.gif");   
+    border-radius: 270px;   
+    bottom: 30px;   
+    height: 270px;  
+    left: 50%;
+    width: 270px;                   
+} 
+/* Specifically for aboutme.html */
+#aboutMain {
     background-color: #000000;
     border-radius: 25px;
-    border-style: solid;
-    border-width: 1px;
     color: #00f0a0;
-    margin: 10px;
-    padding: 20px;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    padding: 10px;
+    position: relative;
+    width: 60%;
 }
-.menupages a {
-    color: #00f0a0;   
+#aboutMain h1 {
+    text-align: center;
 }
-.menupages a:hover {
-    color: #00ff00;
+#aboutMain hr {
+    color: inherit;
+}
+#aboutMain p:hover .first{
+    color: #ffff00;
+    font-size: 20px;
+    font-weight: bold;
+}
+#aboutPage {
+    background-image: url("resources/images/kusama.jpg");
+    background-size: 100%;
+}
+/* Specifically for coursework.html */
+.circleStyle {
+    list-style-type: disc;
+}
+.taskListContainer {
+    background-color: #000000;
+    border-radius: 25px;
+    color: #00f0a0;
+    margin: auto;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    padding: 10px;
+    position: relative;
+    width: 60%;
+}
+.taskListContainer a, .taskListContainer hr {
+    color: inherit;
+}
+.taskListContainer a:hover {
+    color: #ffff00;
+}
+.taskListContainer h2 {
+    text-align: center;
+}
+#courseworkPage {
+    background-image: url("resources/images/stainedglass.jpg");
+    background-size: 100%;
+}
+/* Specifically for task pages */
+.taskPage {
+    background-image: url("resources/images/ambientbackground.gif");
+    background-size: 100%;
 }
 .tasks {
     background-color: #ffffff;
     border-radius: 25px;
-    font-size: 20px;
-    margin: 10px;
-    opacity: 0.4; 
+    color: #000000;
+    font-size: 15px;
+    opacity: 0.3; 
     padding: 20px;
+    margin: auto;  
+    margin-bottom: 30px;  
+    width: 60%;    
+}
+.tasks a {
+    color: #000000;
 }
 .tasks:hover {
     opacity: 0.9;
@@ -46,6 +196,4 @@ a {
 .tasks:hover .questions, .tasks:hover h3 {
     color: #f0a000;
 }
-#indexBody {
-
-}
+  
