@@ -1,5 +1,6 @@
 /* Project-wide styles */
 * {
+    background-attachment: fixed;
     font-family: 'Roboto Condensed', sans-serif;
 }
 a {
