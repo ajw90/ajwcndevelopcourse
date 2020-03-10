@@ -5,25 +5,28 @@
 a {
     text-decoration: none;
 }
+.bottomElement {
+    margin-bottom: 30px;
+}
 /* Specific to index.html */
-div.container {
+div.centerThis {
     margin: 0;  
     position: relative;
     top: 40%;
 }
 #indexPage {
-    background-color: #000000;
+    background-color: #ffffff;
     background-attachment: initial;
 }
 #indexPage:target {
-    background-color: #ffffff;
+    background-color: #000000;
 }
 #menu {
     background-color: #f0a000; 
-    border-radius: 25px; 
+    border-radius: 50px; 
     font-size: 18px;    
     font-weight: bold;  
-    height: 100px;  
+    height: 100px; 
     left: 50%;  
     margin: -50px 0 0 -30%; 
     opacity: 0.8;           
@@ -44,33 +47,37 @@ div.container {
     color: #ffffff;
     font-size: 19px;
 }
-#menu:hover #menu_label {
+#menu:hover #menuLabel {
     display: none;
 }
-#menu:hover #drop_menu {
-    border-radius: 25px; 
+#menu:hover #dropMenu {
+    border-radius: 50px; 
     display: block;
 }
-#drop_menu {
+#menuLabel h1
+{
+    font-size: 25px;
+}
+#dropMenu {
     background-color: #f0a000;  
     display: none;
     height: 300px;           
 }
-#drop_menu div {
+#dropMenu div {
     height: 33.33%;             
 }
 #opt1:hover {
     background-color: #705A90;      
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;                 
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;                 
 }
 #opt2:hover {
     background-color: #C07060;
 }
 #opt3:hover {
     background-color: #80A070;      
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;   
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;   
 } 
 /* Circles for index.html */
 .circles {
@@ -79,35 +86,37 @@ div.container {
 } 
 #circle1 {
     background-image: url("resources/images/rainbow.gif");   
-    border-radius: 450px;           
-    height: 450px;  
+    background-size: 100%;
+    border-radius: 750px;           
+    height: 750px;  
     left: 25%;
     top: 90px;
-    width: 450px;                           
+    width: 750px;                           
 }   
 #circle2 {
     background-image: url("resources/images/ambient_background3.gif");   
-    border-radius: 180px;       
-    height: 180px;  
+    border-radius: 250px;       
+    height: 250px;  
     left: 10%;
     top: 200px;
-    width: 180px;               
+    width: 250px;               
 }    
 #circle3 {
     background-image: url("resources/images/ambient_background2.gif");       
-    border-radius: 300px;   
-    height: 300px;  
+    background-size: 100%;
+    border-radius: 350px;   
+    height: 350px;  
     right: 10%;
     top: 20px;
-    width: 300px;               
+    width: 350px;               
 }    
 #circle4 { 
     background-image: url("resources/images/ambient_background4.gif");   
-    border-radius: 270px;   
-    bottom: 30px;   
-    height: 270px;  
+    border-radius: 300px;   
+    bottom: 40px;   
+    height: 300px;  
     left: 50%;
-    width: 270px;                   
+    width: 300px;                   
 } 
 /* Specifically for aboutme.html */
 #aboutMain {
@@ -116,11 +125,12 @@ div.container {
     color: #00f0a0;
     font-size: 18px;
     margin: auto;
-    margin-bottom: 10px;
-    opacity: 0.8;
-    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    opacity: 0.85;
+    padding: 30px;
     position: relative;
-    width: 60%;
+    width: 40%;
 }
 #aboutMain h1 {
     text-align: center;
@@ -134,7 +144,8 @@ div.container {
     font-weight: bold;
 }
 #aboutPage {
-    background-attachment: fixed;    
+    background-attachment: fixed;  
+    background-color: #000000;    
     background-image: url("resources/images/kusama.jpg");
     background-size: 100%;
 }
@@ -147,9 +158,10 @@ div.container {
     border-radius: 25px;
     color: #00f0a0;
     margin: auto;
-    margin-bottom: 10px;
-    opacity: 0.8;
-    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    opacity: 0.85;
+    padding: 30px;
     position: relative;
     width: 60%;
 }
@@ -163,15 +175,20 @@ div.container {
     text-align: center;
 }
 #courseworkPage {
-    background-attachment: fixed;    
+    background-attachment: fixed;  
+    background-color: #000000;   
     background-image: url("resources/images/stainedglass.jpg");
     background-size: 100%;
 }
 /* Specifically for task pages */
+.refs {
+    word-wrap: break-word;
+}
 .taskPage {
-    background-attachment: fixed;    
+    background-attachment: fixed;   
+    background-color: #000000; 
     background-image: url("resources/images/ambientbackground.gif");
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 .tasks {
     background-color: #ffffff;
@@ -179,16 +196,20 @@ div.container {
     color: #000000;
     font-size: 15px;
     opacity: 0.3; 
-    padding: 20px;
+    padding: 30px;
     margin: auto;  
-    margin-bottom: 30px;  
+    margin-bottom: 30px;
+    margin-top: 30px;  
     width: 60%;    
 }
 .tasks a {
-    color: #000000;
+    color: #000000
 }
 .tasks:hover {
     opacity: 0.9;
+}
+.tasks p:hover {
+    font-weight: bolder;
 }
 .tasks:hover a {
     color: #6000ff;
@@ -200,4 +221,3 @@ div.container {
 .tasks:hover .questions, .tasks:hover h3 {
     color: #f0a000;
 }
-  
