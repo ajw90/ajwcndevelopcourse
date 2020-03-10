@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');
+
+* {
+    box-sizing: border-box;
+}
+.box {
+    color:white;
+    font-size: 50px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    padding:15px;
+    /* flex: 1; */
+}
+  
+  .box1 { background:#eccc68;}
+  .box2 { background:#ff6348;}
+  .box3 { background:#ff7f50;}
+  .box4 { background:#ff4757;}
+  .box5 { background:#f1c40f;}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

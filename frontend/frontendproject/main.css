@@ -119,9 +119,11 @@ div.centerThis {
     width: 300px;                   
 } 
 /* Specifically for aboutme.html */
-#aboutMain {
+.aboutMain {
     background-color: #000000;
     border-radius: 25px;
+    border-style: double;
+    border-width: 5px;
     color: #00f0a0;
     font-size: 18px;
     margin: auto;
@@ -130,15 +132,20 @@ div.centerThis {
     opacity: 0.85;
     padding: 30px;
     position: relative;
-    width: 40%;
-}
-#aboutMain h1 {
     text-align: center;
+    width: 30%;
 }
-#aboutMain hr {
+.aboutMain a {
+    color: #00f0a0;
+}
+.aboutMain a:hover {
+    color: #ffff00;
+    font-weight: bold;
+}
+.aboutMain hr {
     color: inherit;
 }
-#aboutMain p:hover .first{
+.aboutMain p:hover .first{
     color: #ffff00;
     font-size: 20px;
     font-weight: bold;
@@ -153,26 +160,46 @@ div.centerThis {
 .circleStyle {
     list-style-type: disc;
 }
+.mainNav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    width: 100px;
+}
+.tasksFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .taskListContainer {
     background-color: #000000;
     border-radius: 25px;
+    border-style: double;
+    border-width: 5px;
     color: #00f0a0;
-    margin: auto;
+    margin: 30px;
     margin-bottom: 30px;
     margin-top: 30px;
     opacity: 0.85;
     padding: 30px;
     position: relative;
-    width: 60%;
+    width: 40%;
 }
 .taskListContainer a, .taskListContainer hr {
     color: inherit;
 }
 .taskListContainer a:hover {
     color: #ffff00;
+    font-weight: bold;
 }
-.taskListContainer h2 {
+.taskListContainer h2, .taskListContainer h3 {
     text-align: center;
+}
+#courseworkNav {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 #courseworkPage {
     background-attachment: fixed;  
@@ -220,4 +247,51 @@ div.centerThis {
 }
 .tasks:hover .questions, .tasks:hover h3 {
     color: #f0a000;
+}
+.tasksNav {
+    background-color: #f0a000;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    justify-content: space-around;
+    left: 0%;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+}
+.tasksNav a {
+    color: #000000;
+}
+.tasksNav a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+.tasksNav h3 {
+    display: none;
+}
+.tasksNav:hover {
+    height: 60px;
+}
+.tasksNav:hover h3 {
+    display: inline;
+}
+.tasksNav:hover #navDownArrow {
+    display: none;
+}
+.taskNavLinks {
+    flex: 1;
+    width: 50%;
+}
+#navDownArrow {
+    display: inline;
+    opacity: 0.8;
+    vertical-align: 0%;
+}
+#navDownArrow {
+
+}
+#navDownArrow img {
+    width: 30px;
 }
