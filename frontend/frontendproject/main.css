@@ -21,6 +21,11 @@ div.centerThis {
 #indexPage:target {
     background-color: #000000;
 }
+#indexPage:target .circles {
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+}
 #menu {
     background-color: #f0a000; 
     border-radius: 50px; 
@@ -29,7 +34,7 @@ div.centerThis {
     height: 100px; 
     left: 50%;  
     margin: -50px 0 0 -30%; 
-    opacity: 0.8;           
+    opacity: 0.9;           
     position: absolute;
     text-align: center; 
     top: 35%;
@@ -83,6 +88,9 @@ div.centerThis {
 .circles {
     opacity: 0.8;   
     position: absolute; 
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
 } 
 #circle1 {
     background-image: url("resources/images/rainbow.gif");   
@@ -90,40 +98,40 @@ div.centerThis {
     border-radius: 750px;           
     height: 750px;  
     left: 25%;
-    top: 90px;
+    top: 150px;
     width: 750px;                           
 }   
 #circle2 {
     background-image: url("resources/images/ambient_background3.gif");   
-    border-radius: 250px;       
-    height: 250px;  
+    border-radius: 280px;       
+    height: 280px;  
     left: 10%;
     top: 200px;
-    width: 250px;               
+    width: 280px;               
 }    
 #circle3 {
     background-image: url("resources/images/ambient_background2.gif");       
     background-size: 100%;
-    border-radius: 350px;   
-    height: 350px;  
+    border-radius: 400px;   
+    height: 400px;  
     right: 10%;
     top: 20px;
-    width: 350px;               
+    width: 400px;               
 }    
 #circle4 { 
     background-image: url("resources/images/ambient_background4.gif");   
-    border-radius: 300px;   
+    border-radius: 350px;   
     bottom: 40px;   
-    height: 300px;  
+    height: 350px;  
     left: 50%;
-    width: 300px;                   
+    width: 350px;                   
 } 
 /* Specifically for aboutme.html */
 .aboutMain {
     background-color: #000000;
     border-radius: 25px;
-    border-style: double;
-    border-width: 5px;
+    border-style: solid;
+    border-width: 2px;
     color: #00f0a0;
     font-size: 18px;
     margin: auto;
@@ -154,7 +162,7 @@ div.centerThis {
     background-attachment: fixed;  
     background-color: #000000;    
     background-image: url("resources/images/kusama.jpg");
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 /* Specifically for coursework.html */
 .circleStyle {
@@ -169,13 +177,13 @@ div.centerThis {
 .tasksFlexContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 .taskListContainer {
     background-color: #000000;
     border-radius: 25px;
-    border-style: double;
-    border-width: 5px;
+    border-style: solid;
+    border-width: 2px;
     color: #00f0a0;
     margin: 30px;
     margin-bottom: 30px;
@@ -183,7 +191,7 @@ div.centerThis {
     opacity: 0.85;
     padding: 30px;
     position: relative;
-    width: 40%;
+    width: 44%;
 }
 .taskListContainer a, .taskListContainer hr {
     color: inherit;
@@ -199,13 +207,13 @@ div.centerThis {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 44%;
 }
 #courseworkPage {
     background-attachment: fixed;  
     background-color: #000000;   
     background-image: url("resources/images/stainedglass.jpg");
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 /* Specifically for task pages */
 .refs {
