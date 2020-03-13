@@ -3,78 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link  href="animationtest.css" rel="stylesheet" type="text/css">
     <title>Animation Test</title>
-    <style>
-        body {
-            animation-duration: 40s;
-            animation-name: slowFade;
-            animation-iteration-count: infinite;
-        }
-        .circles {
-            animation-iteration-count: infinite;
-            animation-name: follow;
-            border-radius: 100px;
-            height: 100px;
-            left: 25%;
-            position: absolute;
-            top: 50%;
-            width: 100px;
-        }
-        #animated1 {
-            animation-delay: 0.25s;
-            animation-duration: 14s;
-            background-color: #00f0a0;
-
-        }
-        #animated2 {
-            animation-delay: 0s;
-            animation-duration: 12s;
-            background-color: #00a0f0;
-        }
-        #animated3 {
-            animation-delay: 0.5s;
-            animation-duration: 16s;
-            background-color: #f0a000;
-        }
-        #animated4 {
-            animation-delay: 1s;
-            animation-duration: 18s;
-            background-color: #f04040;
-        }
-        @keyframes follow {
-            0% {
-                left: 25%;
-                top: 50%;
-            }
-            25% {
-                left: 50%;
-                top: 25%;
-            }
-            50% {
-                left: 75%;
-                top: 50%;
-            }
-            75% {
-                left: 50%;
-                top: 75%;
-            }
-            100% {
-                left: 25%;
-                top: 50%;              
-            }
-        }
-        @keyframes slowFade {
-            0% {
-                background-color: #ffffff;
-            }
-            50% {
-                background-color: #000000;
-            }
-            100% {
-                background-color: #ffffff;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="circles" id="animated1"></div>
